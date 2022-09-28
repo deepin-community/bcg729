@@ -1,0 +1,33 @@
+bcg729 (1.1.1-2) unstable; urgency=medium
+
+  * update Standards-Version, no changes needed
+  * use build options as described on upstream's
+    documentation
+
+ -- Victor Seva <vseva@debian.org>  Tue, 08 Dec 2020 09:30:28 +0100
+
+bcg729 (1.1.1-1) unstable; urgency=medium
+
+  [ Manuel A. Fernandez Montecelo ]
+  * Non-maintainer upload (for merge-request purposes)
+  * New upstream release
+    - mediastreamer plugin not shipped separately
+    - license change to GPL-3+
+  * Bump debhelper compat level to 13
+  * Use cmake as build system, the one supported by default by upstream
+  * Enable DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+  [ Felix Lechner ]
+  * Ship .la file for mediastreamer plugin
+  * Use proper multiarch path in rules
+  * Change transport in watch file to plain http for PET3
+  * Pointed Vcs: fields in control to debian repo, not upstream
+
+  [ Victor Seva ]
+  * update debian/watch
+  * New upstream version 1.0.4
+
+  [ Felix Lechner ]
+  * Initial release (Closes: #785480)
+
+ -- Victor Seva <vseva@debian.org>  Wed, 02 Dec 2020 10:58:36 +0100
